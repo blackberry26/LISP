@@ -6,7 +6,7 @@
  
 
 
-
+test case:
 
 int: (print(del '(a b c d e f)))
 out: (A C E )
