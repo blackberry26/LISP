@@ -2,38 +2,24 @@
 ;количество элементов с начала списка, во второй — оставшиеся элементы.
 
 (defun F (lst N)
-  
   (if lst
-      
     (if (zerop N)
-        
-      (cons nil (cons lst nil)
-            
+      (cons nil (cons lst nil)     
      )
         
-      ((lambda (elem result)
-               
+      ((lambda (elem result)     
          (cons
-          
-           (cons elem (car result)
-                 
+           (cons elem (car result)      
            )
-          
              (cdr result)
-          
          )
       )
        
-     (car lst)
-       
-   (F (cdr lst) (- N 1))
-       
-     )
-        
-    )
-      
-  )
-  
+            (car lst)    
+            (F (cdr lst) (- N 1))     
+       )       
+     )    
+   )  
  )
 
 test case:
