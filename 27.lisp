@@ -1,10 +1,8 @@
  ;27. Определите функцию, которая, чередуя элементы списков (A B ...) и (1 2 ...), образует новый список (A 1 B 2 ...).  
    
-   (defun alter(X Y)
-      (cond ( (NULL X) Y )
-            (   t   (cons (car x) (alter y (cdr x))) )
-   ))
-   
+(defun alter (x y) (cond ((null x) y)
+                       ((null y) x)
+                       (t (cons (car x) (cons (car y) (alter (cdr x) (cdr y)))))))
    test case:
    
 in:(print(alter '(1 2 24 5 6) '(a b )))
