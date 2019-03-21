@@ -2,7 +2,10 @@
 
 (defun del (lst)
   (cond ((< (length lst) 2) lst)
-        (t (cons (car lst) (del(cddr lst))))))
+        (t (cons (car lst) (del(cddr lst)))
+           )
+         )
+)
  
 
 
