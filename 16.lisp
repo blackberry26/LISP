@@ -10,5 +10,5 @@
 )
 
 test case:
-in:(print(Add '(1 2 3 4 5 6 ) "Hello" 4))
-out:(1 2 3 4 "Hello" 5 6)
+in:(print(Add '(1 2 3 4 5 6 ) "Hello" 1))
+out:(1 "Hello" 2 3 4 5 6)
