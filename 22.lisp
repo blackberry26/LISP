@@ -10,5 +10,5 @@ test case:
 in:(print(rev '(1 2 3 4 5)))
 out:(((((5) 4) 3) 2) 1) 
 
-in:(print(rev '(1 2 5)))
-out:(((5) 2) 1) 
+in:(print(rev '(1)))
+out:(1) 
