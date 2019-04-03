@@ -2,20 +2,19 @@
 
 (defun del-prop(x)
 	((lambda(prop-list)
-			 (cond ((null prop-list) nil)
-					(t (remprop x (car prop-list)))	
-			 )
-	)(symbol-plist x))	 
-	(cond((not(null (symbol-plist x))) (del-prop x))
-	) 
+	       (cond 
+		     ((null prop-list) nil)
+		     (t (remprop x (car prop-list))(del-prop x))	
+	       )
+	)
+	 (symbol-plist x))	 
+	
 )
-test case:
 
-in:(setf(get `x `a)155)
-   (setf(get `x `b)6547)
-   (symbol-plist `x)
-out:(B 6547 A 155)
-in:(del-prop `x)
-out:NIL
-in:(del-prop `x)
-out:NIL
+
+
+
+;(setf(get `x `a)155)
+;(setf(get `x `b)6547)
+
+;(del-prop `x);NIL
