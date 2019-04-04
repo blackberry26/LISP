@@ -14,7 +14,9 @@
 
 
 
+
 ;(setf(get `x `a)155)
 ;(setf(get `x `b)6547)
-
-;(del-prop `x);NIL
+;(print (symbol-plist 'x))
+;(del-prop `x)
+;(print (symbol-plist 'x))
