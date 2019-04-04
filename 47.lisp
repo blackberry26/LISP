@@ -11,12 +11,9 @@
 	
 )
 
+(setf(get `x `a)155)
+(setf(get `x `b)6547)
 
-
-
-
-;(setf(get `x `a)155)
-;(setf(get `x `b)6547)
-;(print (symbol-plist 'x))
+;(print (symbol-plist 'x)) =>(B 6547 A 155)
 ;(del-prop `x)
-;(print (symbol-plist 'x))
+;(print (symbol-plist 'x)) => NIL
