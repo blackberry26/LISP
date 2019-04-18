@@ -9,8 +9,8 @@
 (defun main ()
 	(setq gen1 (nature-generator))
 	(setq gen2 (nature-generator))
-  (list (funcall gen2) (funcall gen2) (funcall gen1) (funcall gen2) (funcall gen1) (funcall gen2)(funcall gen2)
-                                                                                   (funcall gen2)(funcall ge1))
+        (list (funcall gen2) (funcall gen2) (funcall gen1) (funcall gen2) (funcall gen1) (funcall gen2)(funcall gen2)
+                                                                                         (funcall gen2)(funcall ge1))
 )
 
 ;(print(main))
