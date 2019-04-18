@@ -1,0 +1,15 @@
+; 2.Определите функицонал (MAPLIST fn список) для одного списочного аргу-
+мента.
+
+
+
+(defun map-list (fn lst)
+	(cond
+		((null lst) nil)
+		(t (cons (funcall fn lst) (map-list fn (cdr lst))))
+	)
+)
+
+
+;(map-list 'print '(12 2 5 7)) 
+
