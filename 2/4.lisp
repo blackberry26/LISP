@@ -3,7 +3,8 @@
 
 
 (defun every- (pred lst)
-	(null(mapcan #'(lambda (x) (if (funcall pred x) nil (list t))) lst))
+	(null (mapcan (lambda (x) 
+			         (if (funcall pred x) nil (list t))) lst))
 )
 
 
