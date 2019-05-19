@@ -136,7 +136,7 @@
 
 
 
-(defun Massovaya_Dolya(lst) 
+(defun Массовая_доля(lst) 
 (cond 
       ((null lst) nill) 
       (t(/(* (+(*(car lst)(/(cadr lst) 100)) (caddr lst) ) 100 ) (+(car lst)(caddr lst)(cadddr lst)))))) 
@@ -157,7 +157,7 @@
 			((eq operation 'металлы) (setq val (металлы (car elem ))))
                         ((eq operation 'Вычислить) (setq val (Вычислить (car elem ))))
 			((eq operation 'Расположение) (setq val (Расположение (car elem ))))
-			((eq operation 'Massovaya_Dolya ) (setq val (Massovaya_Dolya  (car elem ))))
+			((eq operation 'Массовая_доля ) (setq val (Массовая_доля (car elem ))))
 			
 		)
 		(print val)		
