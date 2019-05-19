@@ -155,7 +155,7 @@
 		(cond
 		
 			((eq operation 'металлы) (setq val (металлы (car elem ))))
-      ((eq operation 'Вычислить) (setq val (Вычислить (car elem ))))
+                        ((eq operation 'Вычислить) (setq val (Вычислить (car elem ))))
 			((eq operation 'Расположение) (setq val (Расположение (car elem ))))
 			((eq operation 'Massovaya_Dolya ) (setq val (Massovaya_Dolya  (car elem ))))
 			
